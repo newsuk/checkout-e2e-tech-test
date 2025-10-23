@@ -1,6 +1,6 @@
 # Checkout E2E Tech Test
 
-This repository contains an E2E test suite for conducting a technical interview. The application is built using [Vite](https://vite.dev/) and E2E tests use [Playwright](https://playwright.dev/).
+This repository contains a test suites for conducting a technical interview. The application is built using [Vite](https://vite.dev/) and E2E tests use [Playwright](https://playwright.dev/).
 
 ## Application fundamentals
 
