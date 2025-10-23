@@ -38,3 +38,32 @@ To start the dev server:
 ```bash
 npm run dev
 ```
+
+## Testing
+
+Testing is achieved with both Unit and E2E tests
+
+### Unit tests
+
+We use [Vitest](https://vitest.dev) for unit tests. To run unit tests use:
+
+```bash
+npm run test
+```
+
+### E2E tests
+
+We use [Playwright](https://playwright.dev/) for E2E tests.
+
+Start the dev server (usually in a separate terminal window):
+
+```bash
+npm run dev
+```
+
+Run Playwright tests:
+
+```bash
+npm run test:e2e
+npm run test:e2e:ci
+```
