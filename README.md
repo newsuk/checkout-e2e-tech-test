@@ -40,17 +40,15 @@ npm run test
 
 ### E2E tests
 
-We use [Playwright](https://playwright.dev/) for E2E tests.
+We use [Playwright](https://playwright.dev/) for E2E tests. First start the dev server (as above) in a separate terminal window.
 
-Start the dev server (as above) in a separate terminal window:
-
-To run E2E tests use:
+Then, run E2E tests using:
 
 ```bash
 npm run test:e2e
 ```
 
-To run E2E tests using UI mode.
+To run E2E tests using UI mode:
 
 ```bash
 npm run test:e2e:ui
