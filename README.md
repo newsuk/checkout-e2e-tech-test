@@ -57,7 +57,7 @@ npm run test
 
 We use [Playwright](https://playwright.dev/) for E2E tests.
 
-To start the dev server (as above) in a separate terminal window:
+Start the dev server (as above) in a separate terminal window:
 
 To run E2E tests use:
 
