@@ -40,7 +40,13 @@ npm run test
 
 ### E2E tests
 
-We use [Playwright](https://playwright.dev/) for E2E tests. First start the dev server (as above) in a separate terminal window.
+We use [Playwright](https://playwright.dev/) for E2E tests. To install Playwright run:
+
+```bash
+npx playwright install
+```
+
+To execute the test, start the dev server (as above) in a separate terminal window.
 
 Then, run E2E tests using:
 
@@ -60,9 +66,9 @@ The application is a simple account creation form with a number of input fields 
 
 On submission of the form, validation checks will mark incorrect inputs as invalid. The input fields have the following validation checks:
 
-- `firstname`: any non-null string
-- `lastname`: any non-null string
-- `email`: valid email string passing the regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`
+- `firstname`: string (not empty)
+- `lastname`: string (not empty)
+- `email`: string passing the regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`
 - `password`: string between 6 and 20 characters
 
 On successful submission of the form, an account created confirmation message will be displayed.
