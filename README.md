@@ -1,15 +1,21 @@
 # Checkout E2E Tech Test
 
-This repository contains an end-to-end (E2E) test suite for conducting a technical interview. The application is built using [Vite](https://vite.dev/) and tests use the [Playwright](https://playwright.dev/) testing framework.
+This repository contains an E2E test suite for conducting a technical interview. The application is built using [Vite](https://vite.dev/) and E2E tests use [Playwright](https://playwright.dev/).
 
-The application is a simple account creation form with a number of input fields and a submit button. On submission of the form, validation checks will mark invalid inputs as incorrect. On successful submission of the form, an account created confirmation message will be displayed. The input fields have the following validation checks:
+## Application fundamentals
+
+The application is a simple account creation form with a number of input fields and a submit button.
+
+On submission of the form, validation checks will mark incorrect inputs as invalid. The input fields have the following validation checks:
 
 - firstname: any non-null string
 - lastname: any non-null string
 - email: valid email string passing the regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`
 - password: string between 6 and 20 characters
 
-If on successful submission of the form, the email contains `news.co.uk`, an error message will be shown stating the account could not be created. A retry link will be displayed. allowing the user to restart the account set up process.
+On successful submission of the form, an account created confirmation message will be displayed.
+
+If on successful submission of the form, the email contains `news.co.uk`, an error message will be shown stating the account could not be created. A retry link will be displayed. allowing the user to restart the process.
 
 ## Getting started
 
