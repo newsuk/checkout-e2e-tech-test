@@ -2,16 +2,16 @@
 
 This repository contains test suites for conducting a technical interview. The application is built using [Vite](https://vite.dev/) and E2E tests use [Playwright](https://playwright.dev/).
 
-## Application fundamentals
+## App structure
 
 The application is a simple account creation form with a number of input fields and a submit button.
 
 On submission of the form, validation checks will mark incorrect inputs as invalid. The input fields have the following validation checks:
 
-- firstname: any non-null string
-- lastname: any non-null string
-- email: valid email string passing the regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`
-- password: string between 6 and 20 characters
+- `firstname`: any non-null string
+- `lastname`: any non-null string
+- `email`: valid email string passing the regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`
+- `password`: string between 6 and 20 characters
 
 On successful submission of the form, an account created confirmation message will be displayed.
 
@@ -39,6 +39,8 @@ To start the dev server:
 npm run dev
 ```
 
+`Vite` will try to start a local dev server on port `5173` [http://localhost:5173](http://localhost:5173)
+
 ## Testing
 
 Testing is achieved with both Unit and E2E tests
@@ -55,15 +57,16 @@ npm run test
 
 We use [Playwright](https://playwright.dev/) for E2E tests.
 
-Start the dev server (usually in a separate terminal window):
+To start the dev server (as above) in a separate terminal window:
 
-```bash
-npm run dev
-```
-
-Run Playwright tests:
+To run E2E tests use:
 
 ```bash
 npm run test:e2e
-npm run test:e2e:ci
+```
+
+To run E2E tests using UI mode.
+
+```bash
+npm run test:e2e:ui
 ```
