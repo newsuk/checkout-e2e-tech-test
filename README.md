@@ -77,4 +77,4 @@ If on successful submission of the form, the email contains `news.co.uk`, an err
 
 ## Interview exercise
 
-The candidate should complete the E2E test suite, add tests to `/tests/app.spec.ts`.
+The candidate should complete the E2E test suite, adding tests to `/tests/app.spec.ts`.
