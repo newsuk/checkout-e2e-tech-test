@@ -6,7 +6,6 @@ metadata:
   annotations:
     circleci.com/project-slug: github/newsuk/checkout-e2e-tech-test
     backstage.io/source-location: url:https://github.com/newsuk/checkout-e2e-tech-test/
-    github.com/team-slug: newsuk/checkout-e2e-tech-test
     backstage.io/productivity-hub-metrics-enabled: 'true'
   tags:
     - bu:newsuk
